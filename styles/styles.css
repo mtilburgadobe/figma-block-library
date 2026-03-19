@@ -313,6 +313,42 @@ main > .section:first-of-type {
   }
 }
 
+/* heading highlights — use <em> inside headings for green accent background */
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+  font-style: normal;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 0 7px;
+  border-radius: 7px;
+  box-decoration-break: clone;
+}
+
+/* dark heading highlight — section style */
+main .section.dark-highlight h1 em,
+main .section.dark-highlight h2 em,
+main .section.dark-highlight h3 em {
+  background-color: var(--dark-color);
+  color: var(--background-color);
+}
+
+/* arrow links — standalone links (not buttons) get an arrow icon */
+main a:not(.button, :has(> .icon))::after {
+  content: '';
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-left: 0.3em;
+  border-right: 2px solid currentcolor;
+  border-top: 2px solid currentcolor;
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
 /* section metadata */
 main .section.light,
 main .section.highlight {
