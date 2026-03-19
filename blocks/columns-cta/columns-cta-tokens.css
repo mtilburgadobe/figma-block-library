@@ -1,0 +1,78 @@
+/* blocks/columns-cta/columns-cta-tokens.css */
+
+/* All values extracted from columns-cta-measurements.txt */
+
+.columns-cta {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --columns-cta-max-width: 1240px;
+  --columns-cta-padding-top: 60px;
+  --columns-cta-padding-right: 60px;
+  --columns-cta-padding-bottom: 60px;
+  --columns-cta-padding-left: 60px;
+  --columns-cta-gap: 40px;
+  --columns-cta-columns: 2;
+  --columns-cta-text-col-flex: 1;
+  --columns-cta-img-col-flex: 0.8;
+
+  /* ===== CONTAINER COLORS ===== */
+  --columns-cta-background: #f3f3f3;
+
+  /* ===== CARD PROPERTIES ===== */
+  --columns-cta-border-width: 0;
+  --columns-cta-border-style: none;
+  --columns-cta-border-color: transparent;
+  --columns-cta-border-radius: 45px;
+
+  /* ===== TYPOGRAPHY - HEADINGS ===== */
+  --columns-cta-heading-font-family: "Space Grotesk", sans-serif;
+  --columns-cta-heading-font-size: 30px;
+  --columns-cta-heading-font-weight: 500;
+  --columns-cta-heading-font-style: normal;
+  --columns-cta-heading-line-height: 38px;
+  --columns-cta-heading-letter-spacing: 0;
+  --columns-cta-heading-text-transform: none;
+  --columns-cta-heading-color: #000;
+  --columns-cta-heading-margin-bottom: 0;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --columns-cta-body-font-family: "Space Grotesk", sans-serif;
+  --columns-cta-body-font-size: 18px;
+  --columns-cta-body-font-weight: 400;
+  --columns-cta-body-font-style: normal;
+  --columns-cta-body-line-height: 23px;
+  --columns-cta-body-letter-spacing: 0;
+  --columns-cta-body-color: #000;
+  --columns-cta-body-margin-bottom: 0;
+
+  /* ===== TYPOGRAPHY - BUTTON ===== */
+  --columns-cta-button-font-family: "Space Grotesk", sans-serif;
+  --columns-cta-button-font-size: 20px;
+  --columns-cta-button-font-weight: 400;
+  --columns-cta-button-font-style: normal;
+  --columns-cta-button-line-height: 28px;
+  --columns-cta-button-letter-spacing: 0;
+  --columns-cta-button-text-transform: none;
+  --columns-cta-button-color: #fff;
+  --columns-cta-button-background: #191a23;
+  --columns-cta-button-border-radius: 14px;
+  --columns-cta-button-padding-x: 35px;
+  --columns-cta-button-padding-y: 20px;
+
+  /* ===== SPACING BETWEEN ELEMENTS ===== */
+  --columns-cta-content-gap: 26px;
+
+  /* ===== SHADOWS ===== */
+  --columns-cta-shadow-x: 0;
+  --columns-cta-shadow-y: 0;
+  --columns-cta-shadow-blur: 0;
+  --columns-cta-shadow-spread: 0;
+  --columns-cta-shadow-color: transparent;
+
+  /* ===== HOVER STATES ===== */
+  --columns-cta-button-hover-background: #2d2e3a;
+  --columns-cta-button-hover-color: #fff;
+
+  /* ===== TRANSITIONS ===== */
+  --columns-cta-transition-duration: 200ms;
+  --columns-cta-transition-timing: ease;
+}

@@ -1,0 +1,112 @@
+/* Import component-specific tokens */
+@import url('./columns-cta-tokens.css');
+
+/* columns-cta block styles */
+
+.columns-cta {
+  background: var(--columns-cta-background);
+  border-radius: var(--columns-cta-border-radius);
+  padding: var(--columns-cta-padding-top) var(--columns-cta-padding-right) var(--columns-cta-padding-bottom) var(--columns-cta-padding-left);
+  overflow: visible;
+}
+
+.columns-cta > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--columns-cta-content-gap);
+}
+
+.columns-cta img {
+  width: 100%;
+}
+
+.columns-cta > div > div {
+  order: 1;
+}
+
+.columns-cta > div > .columns-cta-img-col {
+  order: 0;
+}
+
+.columns-cta > div > .columns-cta-img-col img {
+  display: block;
+}
+
+/* Heading styles */
+.columns-cta h2,
+.columns-cta h3 {
+  font-family: var(--columns-cta-heading-font-family);
+  font-size: var(--columns-cta-heading-font-size);
+  font-weight: var(--columns-cta-heading-font-weight);
+  font-style: var(--columns-cta-heading-font-style);
+  line-height: var(--columns-cta-heading-line-height);
+  letter-spacing: var(--columns-cta-heading-letter-spacing);
+  text-transform: var(--columns-cta-heading-text-transform);
+  color: var(--columns-cta-heading-color);
+  margin-bottom: var(--columns-cta-heading-margin-bottom);
+}
+
+/* Body text styles */
+.columns-cta p {
+  font-family: var(--columns-cta-body-font-family);
+  font-size: var(--columns-cta-body-font-size);
+  font-weight: var(--columns-cta-body-font-weight);
+  font-style: var(--columns-cta-body-font-style);
+  line-height: var(--columns-cta-body-line-height);
+  letter-spacing: var(--columns-cta-body-letter-spacing);
+  color: var(--columns-cta-body-color);
+  margin-bottom: var(--columns-cta-body-margin-bottom);
+}
+
+/* Button styles */
+.columns-cta .button-container {
+  margin-bottom: var(--columns-cta-body-margin-bottom);
+}
+
+.columns-cta a.button {
+  font-family: var(--columns-cta-button-font-family);
+  font-size: var(--columns-cta-button-font-size);
+  font-weight: var(--columns-cta-button-font-weight);
+  font-style: var(--columns-cta-button-font-style);
+  line-height: var(--columns-cta-button-line-height);
+  letter-spacing: var(--columns-cta-button-letter-spacing);
+  text-transform: var(--columns-cta-button-text-transform);
+  color: var(--columns-cta-button-color);
+  background: var(--columns-cta-button-background);
+  border-radius: var(--columns-cta-button-border-radius);
+  padding: var(--columns-cta-button-padding-y) var(--columns-cta-button-padding-x);
+  border: var(--columns-cta-border-width) var(--columns-cta-border-style) var(--columns-cta-border-color);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background var(--columns-cta-transition-duration) var(--columns-cta-transition-timing);
+}
+
+.columns-cta a.button:hover {
+  background: var(--columns-cta-button-hover-background);
+  color: var(--columns-cta-button-hover-color);
+}
+
+/* Desktop layout */
+@media (width >= 900px) {
+  .columns-cta > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: var(--columns-cta-gap);
+  }
+
+  .columns-cta > div > div {
+    order: unset;
+  }
+
+  .columns-cta > div > div:first-child {
+    flex: var(--columns-cta-text-col-flex);
+    display: flex;
+    flex-direction: column;
+    gap: var(--columns-cta-content-gap);
+  }
+
+  .columns-cta > div > div:last-child {
+    flex: var(--columns-cta-img-col-flex);
+  }
+}

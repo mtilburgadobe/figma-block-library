@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-cta",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-19T00:00:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "kdoHkOOqaFZEoRL6fabl17",
+    "figmaNodeId": "336:1753",
+    "figmaNodeName": "CTA block",
+    "figmaUrl": "https://figma.com/design/kdoHkOOqaFZEoRL6fabl17?node-id=336:1753"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "spacious",
+    "purpose": "cta",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + body text + 1 CTA + 1 image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "cta sections",
+      "grey backgrounds"
+    ],
+    "notSuitableFor": [
+      "text-only pages"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["cta"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-19T19:03:00.000Z"
+  }
+}
