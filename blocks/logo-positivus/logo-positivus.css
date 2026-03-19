@@ -1,0 +1,9 @@
+.logo-positivus .logo-positivus-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-positivus .logo-positivus-img {
+  max-width: 220px;
+  height: auto;
+}
