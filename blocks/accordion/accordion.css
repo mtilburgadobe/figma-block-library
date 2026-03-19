@@ -1,0 +1,130 @@
+.accordion .accordion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.accordion .accordion-item {
+  border: 1px solid var(--dark-color);
+  border-radius: 45px;
+  background-color: var(--light-color);
+  box-shadow: 0 5px 0 0 var(--dark-color);
+  padding: 41px 30px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.accordion .accordion-item.accordion-open {
+  background-color: var(--accent-color);
+}
+
+/* header: number + title + toggle */
+.accordion .accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.accordion .accordion-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.accordion .accordion-number {
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.28;
+  color: var(--text-color);
+  flex-shrink: 0;
+}
+
+.accordion .accordion-title {
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.27;
+  color: var(--text-color);
+}
+
+.accordion .accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.accordion .accordion-toggle .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* expandable content */
+.accordion .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion .accordion-item.accordion-open .accordion-content {
+  max-height: 500px;
+}
+
+.accordion .accordion-divider {
+  border: none;
+  border-top: 1px solid var(--text-color);
+  margin: 30px 0;
+}
+
+.accordion .accordion-body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  line-height: 1.28;
+  color: var(--text-color);
+}
+
+.accordion .accordion-body p {
+  margin: 0;
+}
+
+/* desktop */
+@media (width >= 900px) {
+  .accordion .accordion-item {
+    padding: 41px 60px;
+  }
+
+  .accordion .accordion-number {
+    font-size: 60px;
+    line-height: 77px;
+  }
+
+  .accordion .accordion-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .accordion .accordion-label {
+    gap: 25px;
+  }
+
+  .accordion .accordion-toggle {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+  }
+
+  .accordion .accordion-toggle .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
