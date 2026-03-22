@@ -1,0 +1,121 @@
+{
+  "templates": [
+    {
+      "name": "blog-article",
+      "urls": [
+        "https://www.wknd-trendsetters.site/blog/fashion-blog-post"
+      ],
+      "description": "Blog article page with content, images, and related posts",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            ".grid-layout.grid-gap-lg"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Hero Section",
+          "selector": "section:has(.grid-layout)",
+          "style": null,
+          "blocks": [
+            "hero"
+          ],
+          "defaultContent": [
+            "h1.h2-heading",
+            ".breadcrumbs",
+            ".blog-meta",
+            ".tag"
+          ]
+        },
+        {
+          "id": "section-2-blog-content",
+          "name": "Blog Content Section",
+          "selector": "section:has(.blog-content)",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".blog-content h2",
+            ".blog-content p",
+            ".blog-content h3",
+            ".blog-content ul",
+            ".blog-content blockquote"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "faq-page",
+      "urls": [
+        "https://www.wknd-trendsetters.site/faq"
+      ],
+      "description": "FAQ page with frequently asked questions and answers",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            "header .grid-layout.tablet-1-column.grid-gap-xxl"
+          ]
+        },
+        {
+          "name": "accordion",
+          "instances": [
+            ".faq-list"
+          ]
+        },
+        {
+          "name": "columns",
+          "instances": [
+            ".contact-items"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Hero Section",
+          "selector": "header.section.secondary-section",
+          "style": null,
+          "blocks": [
+            "hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-faq",
+          "name": "FAQ Section",
+          "selector": ["section.section:has(.faq-list)", "section.section:not(.secondary-section):not(.accent-section)"],
+          "style": null,
+          "blocks": [
+            "accordion"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-contact",
+          "name": "Contact Section",
+          "selector": ["section.section.secondary-section:has(.contact-items)", "section.section.secondary-section"],
+          "style": null,
+          "blocks": [
+            "columns"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4-cta",
+          "name": "CTA Section",
+          "selector": "section.section.accent-section",
+          "style": "accent",
+          "blocks": [],
+          "defaultContent": [
+            "h2.h2-heading",
+            "p.paragraph-lg",
+            "a.button"
+          ]
+        }
+      ]
+    }
+  ]
+}
