@@ -1,0 +1,18 @@
+{
+  "project": "Figma Block Library",
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": [
+        "edit"
+      ],
+      "isPalette": true,
+      "paletteRect": "top: 54px; left: 5px; bottom: 5px; right: 5px; width: 350px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius)",
+      "url": "/tools/sidekick/library.html",
+      "includePaths": [
+        "**.html**"
+      ]
+    }
+  ]
+}

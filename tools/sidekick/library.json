@@ -1,0 +1,16 @@
+{
+  "total": 7,
+  "offset": 0,
+  "limit": 7,
+  "data": [
+    { "name": "Hero", "path": "/block-collection/hero" },
+    { "name": "Accordion", "path": "/block-collection/accordion" },
+    { "name": "Cards", "path": "/block-collection/cards" },
+    { "name": "Columns", "path": "/block-collection/columns" },
+    { "name": "Columns CTA", "path": "/block-collection/columns-cta" },
+    { "name": "Logo Positivus", "path": "/block-collection/logo-positivus" },
+    { "name": "Plus Icon", "path": "/block-collection/plus-icon" }
+  ],
+  "columns": ["name", "path"],
+  ":type": "sheet"
+}
