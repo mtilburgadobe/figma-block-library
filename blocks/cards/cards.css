@@ -3,25 +3,132 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (width >= 600px) {
+  .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 45px;
+  padding: 40px 35px;
+  box-shadow: 0 5px 0 0 var(--dark-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+/* header: photo + name/title + social icon */
+.cards .cards-card-header {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 28px;
 }
 
+/* person photo */
 .cards .cards-card-image {
-  line-height: 0;
+  flex-shrink: 0;
+  width: 103px;
+  height: 103px;
+  margin-right: 20px;
 }
 
-.cards > ul > li img {
+.cards .cards-card-image picture {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
+}
+
+.cards .cards-card-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 50%;
+}
+
+/* name and title */
+.cards .cards-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.cards .cards-card-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-color);
+}
+
+.cards .cards-card-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.28;
+  color: var(--text-color);
+}
+
+/* social icon */
+.cards .cards-card-social {
+  flex-shrink: 0;
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+.cards .cards-card-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.cards .cards-card-social a::after {
+  display: none;
+}
+
+.cards .cards-card-social a::before {
+  content: 'in';
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--background-color);
+  line-height: 1;
+}
+
+/* divider line */
+.cards .cards-card-divider {
+  border: none;
+  border-top: 1px solid var(--text-color);
+  margin: 0 0 28px;
+}
+
+/* description */
+.cards .cards-card-description {
+  flex: 1;
+}
+
+.cards .cards-card-description p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.28;
+  color: var(--text-color);
 }
