@@ -1,0 +1,80 @@
+.case-studies {
+  padding: 0 24px;
+}
+
+@media (width >= 900px) {
+  .case-studies {
+    padding: 0 100px;
+  }
+}
+
+.case-studies .case-studies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 30px;
+  background-color: var(--dark-color);
+  border-radius: 45px;
+}
+
+@media (width >= 900px) {
+  .case-studies .case-studies-list {
+    flex-direction: row;
+    gap: 64px;
+    padding: 70px 60px;
+  }
+}
+
+.case-studies .case-studies-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.case-studies .case-studies-description {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.28;
+  color: var(--background-color);
+}
+
+.case-studies .case-studies-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--accent-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.case-studies .case-studies-link::after {
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  background-color: var(--accent-color);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 20'%3E%3Cpath d='M1 19L19 1M19 1H5M19 1V15' stroke='currentColor' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat center;
+  mask-size: contain;
+}
+
+.case-studies .case-studies-link:hover {
+  text-decoration: underline;
+}
+
+.case-studies .case-studies-divider {
+  display: none;
+}
+
+@media (width >= 900px) {
+  .case-studies .case-studies-divider {
+    display: block;
+    width: 1px;
+    align-self: stretch;
+    background-color: var(--background-color);
+    flex-shrink: 0;
+  }
+}
