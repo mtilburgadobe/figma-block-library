@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.wknd-trendsetters.site/faq",
+  "path": "faq",
+  "timestamp": "2026-03-19T19:25:29.405Z",
+  "title": "FAQ - The Fashion Blog",
+  "template": "faq-page",
+  "blocks": [
+    "hero",
+    "accordion",
+    "columns"
+  ]
+}
